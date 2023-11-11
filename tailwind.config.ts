@@ -241,6 +241,8 @@ const config: Config = {
         // => @media (max-height: 650px) { ... }
         smallHeight: { raw: "(max-height: 680px)" },
         // => @media (max-height: 680px) { ... }
+        xs: "340px",
+
         mobile: "428px",
         // => @media (min-width: 428px) { ... }
         tablet: "744px",

@@ -33,8 +33,8 @@ export default function Home() {
     const typewriter = new Typewriter(typing, { loop: true });
 
     typewriter
-      .typeString("Acesse a exibição 3D do projeto")
-      .pauseFor(500)
+      .typeString("Acesse a vista 360 do projeto")
+      .pauseFor(2000)
       .deleteAll()
       .start();
   }, []);
@@ -46,12 +46,14 @@ export default function Home() {
       >
         <div className="flex flex-col pt-4 px-4 justify-center items-center">
           <Zoom left>
-            <p className="text-6xl text-base-white font-bold">Museu Ibiporã</p>
+            <p className="text-4xl xs:text-6xl text-base-white font-bold">
+              Museu Ibiporã
+            </p>
             <span
               id="typing"
-              className="text-xl text-base-white font-bold mb-6 twe"
+              className="text-md text-base-white font-bold mb-6 xs:text-lg"
             >
-              Acesse a exibição 3D do projeto
+              Acesse a vista 360 do projeto
             </span>
             <span className="text-base-white text-center font-semibold mb-3">
               Passo 1: baixar o arquivo da imagem
@@ -120,9 +122,9 @@ export default function Home() {
               </a>
             </div>
             <span className="text-base-white text-center font-semibold">
-              Após baixar o aplicativo e o arquivo da imagem, abra a imagem no
-              aplicativo. Em seguida, será possível rotacionar a imagem para
-              obter uma visão em 360 graus da Sala Brasil no Museu Ibiporã!
+              Após baixar o arquivo da imagem e o aplicativo, abra a imagem no
+              aplicativo. Em seguida, será possível rotacionar para obter uma
+              visão em 360 graus da Sala Brasil no Museu Ibiporã!
             </span>
           </Zoom>
           <img src="/mockup-cell.png" alt="Logo GL" className="w-full h-full" />
