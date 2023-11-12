@@ -44,7 +44,7 @@ export default function Home() {
       <div
         className={`flex bg-primary h-full w-full rounded-sm justify-center al bg-opacity-95 text-center bg-[url("/layered-waves-haikei.svg")] bg-cover`}
       >
-        <div className="flex flex-col pt-4 px-4 justify-center items-center">
+        <div className="flex flex-col pt-8 px-4 justify-center items-center">
           <Zoom left>
             <p className="text-4xl xs:text-6xl text-base-white font-bold">
               Museu Ibiporã
@@ -56,7 +56,7 @@ export default function Home() {
               Acesse a vista 360 do projeto
             </span>
             <span className="text-base-white text-center font-semibold mb-3">
-              Passo 1: baixar o arquivo da imagem
+              <b>Passo 1:</b> baixar o arquivo da imagem
             </span>
             <button
               onClick={handleDownload}
@@ -68,7 +68,7 @@ export default function Home() {
 
             <div className="flex flex-col justify-center my-6 gap-3">
               <span className="text-base-white text-center font-semibold">
-                Passo 2: baixar o aplicativo
+                <b>Passo 2:</b> baixar o aplicativo
               </span>
               <a
                 className="flex items-center justify-center text-base-white bg-base-black w-full h-14 rounded-md"
@@ -127,7 +127,11 @@ export default function Home() {
               visão em 360 graus da Sala Brasil no Museu Ibiporã!
             </span>
           </Zoom>
-          <img src="/mockup-cell.png" alt="Logo GL" className="w-full h-full" />
+          <img
+            src="/mockup-cell (1).png"
+            alt="Logo GL"
+            className="w-full h-full"
+          />
         </div>
       </div>
     </main>
